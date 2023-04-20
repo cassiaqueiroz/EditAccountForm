@@ -1,0 +1,28 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    <lightning:recordEditForm aura:id="recordEditForm"
+                              objectApiName="Account">
+        <lightning:messages />
+        
+        <div class="slds-box slds-theme_default">
+            
+            <div class="slds-m-top_small">
+                
+                
+                <div class="slds-col slds-p-horizontal_medium">
+                    <lightning:inputField fieldName="Name" />
+                </div>
+            </div>
+            <lightning:inputField fieldName="AnnualRevenue" />
+            <lightning:inputField fieldName="Phone" />
+            
+            <div class="slds-m-top_small">
+                <div class="slds-align_absolute-center">
+                    <div class="slds-m-bottom_medium">
+                        <lightning:button class="slds-m-top_small" type="submit" label="Create new" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </lightning:recordEditForm>
+</aura:component>
